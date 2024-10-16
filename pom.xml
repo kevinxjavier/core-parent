@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.4</version>
+		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -76,7 +76,6 @@
 		<!--PLUGINS -->
 		<jacoco-plugin.version>0.8.10</jacoco-plugin.version>
 		<cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
-		<maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
 		<checkstyle.version>8.45</checkstyle.version>
 		<maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
 
@@ -91,7 +90,7 @@
 
 		<!-- Security -->
 		<jjwt-api.version>0.11.5</jjwt-api.version>
-
+		
 		<!-- OTHERS -->
 		<lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
 		<org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
@@ -101,6 +100,7 @@
 		<lombok.version>1.18.30</lombok.version>
 		<snakeyaml.version>2.0</snakeyaml.version>
 		<jackson-datatype-jsr310.version>2.15.2</jackson-datatype-jsr310.version>
+		<commons-csv.version>1.10.0</commons-csv.version>
 
 		<!--Sonar and JaCoCO coverage related properties -->
 		<sonar.exclusions>
@@ -242,6 +242,11 @@
 				<version>${hibernate.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-csv</artifactId>
+				<version>${commons-csv.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
